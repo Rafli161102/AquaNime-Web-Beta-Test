@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Tulisan / Fanart - AquaNime</title>
+    <link rel="stylesheet" href="../css/style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<script>
+  // Prevent white blink on reload if dark mode is enabled
+  (function() {
+    try {
+      if (localStorage.getItem('aquanimeDarkMode') === 'true') {
+        document.documentElement.classList.add('dark-mode-preload');
+        document.body.classList.add('dark-mode');
+      }
+    } catch(e){}
+  })();
+</script>
+<body> <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="AquaNime Logo" loading="lazy">
+                <span>AquaNime</span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="../index.html" data-lang-key="beranda">BERANDA</a></li> <li><a href="../pages/tentang.html" data-lang-key="tentang">TENTANG</a></li> <li><a href="../pages/proyek.html" data-lang-key="proyek">PROYEK</a></li> <li><a href="../pages/portal.html" data-lang-key="portal">PORTAL</a></li> <li><a href="../pages/kontak.html" data-lang-key="kontak">KONTAK</a></li> </ul>
+            <div class="lang-mode-toggles">
+                <div class="dark-mode-toggle" id="dark-mode-toggle">
+                    <i class="fas fa-moon"></i> <span data-lang-key="dark_mode">Dark Mode</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="content-section animate-target">
+            <h2 data-lang-key="send_writing_fanart_h2">Kirim Tulisan / Fanart Anda</h2>
+            <p data-lang-key="send_writing_fanart_p">Kami sangat antusias untuk melihat karya-karya Anda! Gunakan formulir di bawah ini untuk mengirimkan tulisan atau fanart yang ingin Anda bagikan dengan komunitas AquaNime.</p>
+
+            <form id="submissionForm" action="#" method="POST" class="contact-form">
+                <label for="submission-name" data-lang-key="your_name_stage_name_label">Nama Anda / Nama Panggung:</label>
+                <input type="text" id="submission-name" name="authorName" required>
+
+                <label for="submission-email" data-lang-key="your_email_label">Email Anda:</label>
+                <input type="email" id="submission-email" name="authorEmail" required>
+
+                <label for="submission-type" data-lang-key="work_type_label">Jenis Karya:</label>
+                <select id="submission-type" name="category" required>
+                    <option value="" data-lang-key="select_work_type_option">-- Pilih Jenis Karya --</option>
+                    <option value="ilustrasi" data-lang-key="illustration_fanart_option">Ilustrasi / Fanart</option>
+                    <option value="tulisan" data-lang-key="writing_short_story_option">Tulisan / Cerita Pendek</option>
+                    <option value="lainnya" data-lang-key="other_option">Lainnya</option> </select>
+
+                <label for="submission-title" data-lang-key="work_title_label">Judul Karya:</label>
+                <input type="text" id="submission-title" name="title" required>
+
+                <label for="submission-imageUrl" data-lang-key="upload_file_url_label">Link Gambar/Media (URL):</label>
+                <input type="url" id="submission-imageUrl" name="imageUrl" placeholder="Contoh: https://i.imgur.com/your_image.jpg" data-lang-key="upload_file_url_placeholder">
+                <small data-lang-key="supported_formats_url_small">Masukkan URL gambar atau media Anda (JPG, PNG, GIF, dll.).</small>
+
+                <label for="submission-description" data-lang-key="work_desc_label">Deskripsi Singkat Karya Anda:</label>
+                <textarea id="submission-description" name="description" rows="5" placeholder="Ceritakan sedikit tentang karya Anda atau inspirasinya." data-lang-key="work_desc_placeholder"></textarea>
+
+                <button type="submit" class="btn-primary" data-lang-key="send_work_btn">Kirim Karya</button>
+            </form>
+            <p style="text-align: center; margin-top: 30px;" data-lang-key="other_work_types_p_upload_video">
+                Untuk jenis karya lain seperti Musik/Audio atau Video, silakan gunakan formulir khusus <a href="upload_video_musik.html" data-lang-key="upload_video_music_link">Upload Video / Musik</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 data-lang-key="explore_footer">EKSPLORASI</h4>
+                <ul>
+                    <li><a href="../index.html" data-lang-key="home_footer">Beranda</a></li> <li><a href="../pages/tentang.html" data-lang-key="about_us_footer">Tentang kami</a></li> <li><a href="../pages/tentang.html#visi-misi" data-lang-key="vision_mission_footer">Visi & Misi</a></li> <li><a href="../pages/tentang.html#maskot" data-lang-key="about_mascot_footer">Tentang Maskot</a></li> <li><a href="../pages/portal.html" data-lang-key="info_portal_footer">Portal Informasi</a></li> <li><a href="../pages/proyek.html" data-lang-key="community_projects_footer">Proyek Komunitas</a></li> <li><a href="#" data-lang-key="events_gathering_footer">Event dan Gathering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="community_footer">KOMUNITAS</h4>
+                <ul>
+                    <li><a href="../community/komunitas_join.html" data-lang-key="join_community_footer">Join Komunitas</a></li> <li><a href="../community/komunitas_divisi_regional.html" data-lang-key="divisions_regions_footer">Divisi & Regional</a></li> <li><a href="../community/komunitas_karya_member.html" data-lang-key="member_works_footer">Karya Member</a></li> <li><a href="../community/komunitas_forum_diskusi.html" data-lang-key="discussion_forum_footer">Forum Diskusi</a></li> <li><a href="../community/komunitas_light_novel_aria.html" data-lang-key="read_aria_novel_footer">Baca Light Novel Aria</a></li> <li><a href="../community/komunitas_fanmade.html" data-lang-key="fanmade_footer">Fanmade</a></li> </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="help_relations_footer">BANTUAN DAN RELASI</h4>
+                <ul>
+                    <li><a href="../pages/kontak.html" data-lang-key="contact_us_footer">Kontak Kami</a></li> <li><a href="../pages/kontak.html#hubungi-founder" data-lang-key="contact_founder_footer">Hubungi Founder</a></li> <li><a href="../pages/kontak.html#partnership-kolaborasi" data-lang-key="partnership_collaboration_footer">Partnership / Kolaborasi</a></li> <li><a href="#" data-lang-key="media_pr_footer">Media & Public Relation</a></li> <li><a href="#" data-lang-key="donation_footer">Donasi</a></li>
+                    <li><a href="../pages/kontak.html#faq" data-lang-key="faq_footer">FAQ / Pertanyaan Umum</a></li> </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="legal_tech_info_footer">LEGAL & INFO TEKNIS</h4>
+                <ul>
+                    <li><a href="../legal/kebijakan_privasi.html" data-lang-key="privacy_policy_footer">Kebijakan Privasi</a></li> <li><a href="../legal/syarat_ketentuan.html" data-lang-key="terms_conditions_footer">Syarat & Ketentuan</a></li> <li><a href="../legal/kode_etik_komunitas.html" data-lang-key="community_code_of_conduct_footer">Kode Etik Komunitas</a></li> <li><a href="../legal/versi_website_log.html" data-lang-key="website_version_log_footer">Versi Website / Update Log</a></li> <li><a href="../legal/laporan_bug_masukan.html" data-lang-key="bug_report_feedback_footer">Laporan Bug / Masukan</a></li> </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="arias_corner_footer">ARIA'S CORNER</h4>
+                <ul>
+                    <li><a href="../aria_corner/aria_quote_of_the_day.html" data-lang-key="quote_of_day_footer">Quote of the Day by Aria</a></li> <li><a href="../aria_corner/aria_mini_diary.html" data-lang-key="aria_mini_diary_footer">Aria's Mini Diary</a></li> <li><a href="../aria_corner/aria_photocard_collection.html" data-lang-key="aria_photocard_collection_footer">Aria Photocard Collection</a></li> <li><a href="../aria_corner/aria_cosplayer_tribute.html" data-lang-key="aria_cosplayer_tribute_footer">Aria Cosplayer's</a></li> </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-lang-key="aquanime_community_text">Komunitas AquaNime</p>
+            <p data-lang-key="region_text">Wilayah: Jabodetabek, Jawa Barat</p>
+            <p data-lang-key="email_text">Email: aquanime.ow@gmail.com</p>
+            <p data-lang-key="copyright_text">©2017-2025 AquaNime. All rights reserved. Didukung oleh komunitas untuk komunitas.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script> <script src="../js/aria_chat_ai.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const submissionForm = document.getElementById('submissionForm');
+            const API_BASE_URL = 'http://localhost:5000/api/karya'; // Sesuaikan jika backend Anda di port/domain berbeda
+
+            if (submissionForm) {
+                submissionForm.addEventListener('submit', async (event) => {
+                    event.preventDefault(); // Mencegah form refresh halaman
+
+                    const formData = new FormData(submissionForm);
+                    const data = Object.fromEntries(formData.entries());
+
+                    try {
+                        const response = await fetch(API_BASE_URL, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data),
+                        });
+
+                        const result = await response.json();
+
+                        if (response.ok) {
+                            alert('Karya berhasil dikirim! Akan segera ditampilkan di galeri setelah diverifikasi.');
+                            submissionForm.reset(); // Bersihkan formulir
+                            // Opsional: Redirect ke halaman karya member atau tampilkan pesan sukses
+                            // window.location.href = '../community/komunitas_karya_member.html';
+                        } else {
+                            // Tampilkan pesan error dari backend
+                            alert(`Gagal mengirim karya: ${result.error || response.statusText}`);
+                            console.error('Error response:', result);
+                        }
+                    } catch (error) {
+                        alert('Terjadi kesalahan jaringan atau server. Coba lagi nanti.');
+                        console.error('Network or server error:', error);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

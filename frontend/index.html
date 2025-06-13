@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaNime - Japanese Culture Community Engaged in Creativity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<script>
+  // Prevent white blink on reload if dark mode is enabled
+  (function() {
+    try {
+      if (localStorage.getItem('aquanimeDarkMode') === 'true') {
+        document.documentElement.classList.add('dark-mode-preload');
+        document.body.classList.add('dark-mode');
+      }
+    } catch(e){}
+  })();
+</script>
+<body class="homepage-body">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="AquaNime Logo" loading="lazy">
+                <span>AquaNime</span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html" data-lang-key="beranda">BERANDA</a></li>
+                <li><a href="pages/tentang.html" data-lang-key="tentang">TENTANG</a></li>
+                <li><a href="pages/proyek.html" data-lang-key="proyek">PROYEK</a></li>
+                <li><a href="pages/portal.html" data-lang-key="portal">PORTAL</a></li>
+                <li><a href="pages/kontak.html" data-lang-key="kontak">KONTAK</a></li>
+            </ul>
+            <div class="lang-mode-toggles">
+                <div class="dark-mode-toggle" id="dark-mode-toggle">
+                    <i class="fas fa-moon"></i> <span data-lang-key="dark_mode">Dark Mode</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="homepage-main-content">
+        <section class="hero-section homepage-section content-overlay-1">
+            <div class="hero-content animate-target">
+                <h1 data-lang-key="start_creative_journey">MULAI PETUALANGAN KREATIFMU</h1>
+                <a href="community/komunitas_join.html" class="btn-primary" data-lang-key="join_now">GABUNG SEKARANG</a>
+            </div>
+        </section>
+
+        <section class="homepage-section content-overlay-2">
+            <div class="hero-content text-left animate-target">
+                <h2 data-lang-key="community_description_h2">KOMUNITAS KREATIF JEJEPANGAN<br>BERDOMISILI JABODETABEK & JAWA BARAT</h2>
+                <p data-lang-key="community_description_p">Kami bikin proyek bareng, belajar bareng, dan berkembang bareng. Kalau kamu suka Budaya Jepang dan kreatif, ya cocok!</p>
+            </div>
+        </section>
+
+        <section class="homepage-section content-overlay-3">
+            <div class="container text-center animate-target">
+                <h2 class="projects-page-title" style="color: var(--white);" data-lang-key="ideas_come_alive_h2_hp">TEMPAT IDE LIAR JADI NYATA</h2>
+                <div class="projects-grid" style="margin-top: 40px;">
+                    <div class="project-card maskot-card" data-audio="assets/audio/maskot_project.mp3"> <div class="icon"><i class="fas fa-hat-wizard"></i></div>
+                        <h3 data-lang-key="project_maskot_h3_hp">PROYEK MASKOT</h3>
+                        <p data-lang-key="project_maskot_p_hp">Mengembangkan maskot komunitas "Aria Ayumi" sebagai wajah komunitas, melalui ilustrasi, cosplay, dan media sosial.</p>
+                        <button class="play-audio-btn"><i class="fas fa-play"></i> <span data-lang-key="listen_audio">Dengar Audio</span></button>
+                    </div>
+                    <div class="project-card" data-audio="assets/audio/band_project.mp3"> <div class="icon"><i class="fas fa-guitar"></i></div>
+                        <h3 data-lang-key="project_band_h3_hp">PROYEK BAND</h3>
+                        <p data-lang-key="project_band_p_hp">Membangun grup band komunitas bergenre J-Pop Rock di region Jawa Barat. Terdiri dari 5 personel.</p>
+                        <button class="play-audio-btn"><i class="fas fa-play"></i> <span data-lang-key="listen_audio">Dengar Audio</span></button>
+                    </div>
+                    <div class="project-card" data-audio="assets/audio/light_novel_project.mp3"> <div class="icon"><i class="fas fa-book-open"></i></div>
+                        <h3 data-lang-key="project_light_novel_h3_hp">PROYEK LIGHT NOVEL</h3>
+                        <p data-lang-key="project_light_novel_p_hp">Menulis cerita original berbasis maskot "Aria" dan komunitas, menggabungkan proyek visual dan musik.</p>
+                        <button class="play-audio-btn"><i class="fas fa-play"></i> <span data-lang-key="listen_audio">Dengar Audio</span></button>
+                    </div>
+                    <div class="project-card" data-audio="assets/audio/jurnalistik_project.mp3"> <div class="icon"><i class="fas fa-newspaper"></i></div>
+                        <h3 data-lang-key="project_journalism_h3_hp">PROYEK JURNALISTIK</h3>
+                        <p data-lang-key="project_journalism_p_hp">Mengemas riset dan berita seputar anime & budaya Jejepangan dalam format video dan artikel.</p>
+                        <button class="play-audio-btn"><i class="fas fa-play"></i> <span data-lang-key="listen_audio">Dengar Audio</span></button>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="pages/proyek.html" class="btn-secondary" data-lang-key="view_all_projects_hp_btn">LIHAT SEMUA PROYEK</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="homepage-section content-overlay-4">
+            <div class="container text-center animate-target">
+                <h2 style="color: var(--white);" data-lang-key="from_ordinary_h2_hp">DARI KOMUNITAS BIASA,<br>JADI TEMPAT BERKEMBANGN LUAR BIASA</h2>
+                <p style="color: var(--white);" data-lang-key="from_ordinary_p_hp">Komunitas ini lebih dari sekadar kumpul-kumpul ini tentang perjalanan dan transformasi bareng teman-teman yang sepemikiran.</p>
+
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-item">
+                            <p>"Bergabung dengan AquaNime adalah salah satu keputusan terbaik saya! Saya menemukan banyak teman baru dan bisa mengembangkan bakat saya di sini."</p>
+                            <h4>- Nama Member 1</h4>
+                            <span>Divisi Kreatif</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <p>"Dukungan yang saya dapatkan dari komunitas ini luar biasa. Ide-ide saya tidak pernah dianggap aneh, justru selalu didukung untuk berkembang."</p>
+                            <h4>- Nama Member 2</h4>
+                            <span>Regional Bandung</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <p>"Sering ada event dan kolaborasi seru. AquaNime bukan hanya komunitas, tapi keluarga yang selalu ada untuk saling belajar."</p>
+                            <h4>- Nama Member 3</h4>
+                            <span>Proyek Band</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <p>"Dari cuma suka-suka anime, sekarang saya jadi bisa nulis light novel berkat bimbingan dari para senior di sini."</p>
+                            <h4>- Nama Member 4</h4>
+                            <span>Divisi Konten</span>
+                        </div>
+                        </div>
+                    <button class="slider-button prev-button"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-button next-button"><i class="fas fa-chevron-right"></i></button>
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="homepage-section content-overlay-1">
+            <div class="container text-center animate-target">
+                <h2 data-lang-key="media_partner_h2_hp">MEDIA & PARTNER<br>YANG SUDAH BERKOLABORASI DENGAN AQUANIME</h2>
+                <div class="partners-grid" style="grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));">
+                    <div class="partner-logo"><img src="assets/images/atx_logo.png" alt="ATX Logo" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/images/manekineko_logo.png" alt="Karaoke Manekineko Logo" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/images/rri_logo.png" alt="RRI Jakarta 105.0 FM Logo" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/images/suara_com_logo.png" alt="Suara.com Logo" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/images/yoursay_id_logo.png" alt="Yoursay.id Logo" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/images/oronamin_c_logo.png" alt="Oronamin C Drink Logo" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/images/bstation_logo.png" alt="Bstation Logo" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/images/aok_logo.png" alt="AOK Logo" loading="lazy"></div>
+                    <div class="partner-logo"><img src="assets/images/jagat_logo.png" alt="Jagat Logo" loading="lazy"></div>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <p style="color: var(--white);" data-lang-key="want_to_be_partner_hp">Mau jadi partner kami juga?</p>
+                    <a href="pages/kontak.html" class="btn-primary" data-lang-key="contact_now_hp_btn">HUBUNGI SEKARANG</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="homepage-section content-overlay-2">
+            <div class="container text-center animate-target">
+                <h2 data-lang-key="dare_to_show_imagination_h2_hp">BERANI TUNJUKKAN İMAJINASI KAMU?</h2>
+                <p data-lang-key="dare_to_show_imagination_p_hp">Di AquaNime, kreativitas kamu nggak akan dianggap aneh. Bikin, kolaborasi, dan wujudkan passion bareng komunitas yang ngertiin kamu.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-secondary" data-lang-key="start_creating_hp_btn">MULAI BERKARYA</a>
+                    <a href="#" class="btn-secondary" data-lang-key="join_community_hp_btn">GABUNG KOMUNITAS</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="homepage-section content-overlay-3">
+            <div class="container text-center animate-target">
+                <h2 data-lang-key="see_social_media_h2_hp">LIHAT AKTIVITAS KAMI<br>LEBIH DEKAT DI SOSIAL MEDIA</h2>
+                <div class="large-social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 data-lang-key="explore_footer">EKSPLORASI</h4>
+                <ul>
+                    <li><a href="index.html" data-lang-key="home_footer">Beranda</a></li>
+                    <li><a href="pages/tentang.html" data-lang-key="about_us_footer">Tentang kami</a></li>
+                    <li><a href="pages/tentang.html#visi-misi" data-lang-key="vision_mission_footer">Visi & Misi</a></li>
+                    <li><a href="pages/tentang.html#maskot" data-lang-key="about_mascot_footer">Tentang Maskot</a></li>
+                    <li><a href="pages/portal.html" data-lang-key="info_portal_footer">Portal Informasi</a></li>
+                    <li><a href="pages/proyek.html" data-lang-key="community_projects_footer">Proyek Komunitas</a></li>
+                    <li><a href="#" data-lang-key="events_gathering_footer">Event dan Gathering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="community_footer">KOMUNITAS</h4>
+                <ul>
+                    <li><a href="community/komunitas_join.html" data-lang-key="join_community_footer">Join Komunitas</a></li>
+                    <li><a href="community/komunitas_divisi_regional.html" data-lang-key="divisions_regions_footer">Divisi & Regional</a></li>
+                    <li><a href="community/komunitas_karya_member.html" data-lang-key="member_works_footer">Karya Member</a></li>
+                    <li><a href="community/komunitas_forum_diskusi.html" data-lang-key="discussion_forum_footer">Forum Diskusi</a></li>
+                    <li><a href="community/komunitas_light_novel_aria.html" data-lang-key="read_aria_novel_footer">Baca Light Novel Aria</a></li>
+                    <li><a href="community/komunitas_fanmade.html" data-lang-key="fanmade_footer">Fanmade</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="help_relations_footer">BANTUAN DAN RELASI</h4>
+                <ul>
+                    <li><a href="pages/kontak.html" data-lang-key="contact_us_footer">Kontak Kami</a></li>
+                    <li><a href="pages/kontak.html#hubungi-founder" data-lang-key="contact_founder_footer">Hubungi Founder</a></li>
+                    <li><a href="pages/kontak.html#partnership-kolaborasi" data-lang-key="partnership_collaboration_footer">Partnership / Kolaborasi</a></li>
+                    <li><a href="#" data-lang-key="media_pr_footer">Media & Public Relation</a></li>
+                    <li><a href="#" data-lang-key="donation_footer">Donasi</a></li>
+                    <li><a href="pages/kontak.html#faq" data-lang-key="faq_footer">FAQ / Pertanyaan Umum</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="legal_tech_info_footer">LEGAL & INFO TEKNIS</h4>
+                <ul>
+                    <li><a href="legal/kebijakan_privasi.html" data-lang-key="privacy_policy_footer">Kebijakan Privasi</a></li>
+                    <li><a href="legal/syarat_ketentuan.html" data-lang-key="terms_conditions_footer">Syarat & Ketentuan</a></li>
+                    <li><a href="legal/kode_etik_komunitas.html" data-lang-key="community_code_of_conduct_footer">Kode Etik Komunitas</a></li>
+                    <li><a href="legal/versi_website_log.html" data-lang-key="website_version_log_footer">Versi Website / Update Log</a></li>
+                    <li><a href="legal/laporan_bug_masukan.html" data-lang-key="bug_report_feedback_footer">Laporan Bug / Masukan</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="arias_corner_footer">ARIA'S CORNER</h4>
+                <ul>
+                    <li><a href="aria_corner/aria_quote_of_the_day.html" data-lang-key="quote_of_day_footer">Quote of the Day by Aria</a></li>
+                    <li><a href="aria_corner/aria_mini_diary.html" data-lang-key="aria_mini_diary_footer">Aria's Mini Diary</a></li>
+                    <li><a href="aria_corner/aria_photocard_collection.html" data-lang-key="aria_photocard_collection_footer">Aria Photocard Collection</a></li>
+                    <li><a href="aria_corner/aria_cosplayer_tribute.html" data-lang-key="aria_cosplayer_tribute_footer">Aria Cosplayer's</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-lang-key="aquanime_community_text">Komunitas AquaNime</p>
+            <p data-lang-key="region_text">Wilayah: Jabodetabek, Jawa Barat</p>
+            <p data-lang-key="email_text">Email: aquanime.ow@gmail.com</p>
+            <p data-lang-key="copyright_text">©2017-2025 AquaNime. All rights reserved. Didukung oleh komunitas untuk komunitas.</p>
+        </div>
+    </footer>
+
+    <div class="aria-chat-popup-container">
+        <div class="aria-chat-icon" id="aria-chat-icon">
+            <img src="assets/images/aria_chibi_icon.png" alt="Aria Chibi Chat Icon"> <span class="chat-notification" id="chat-notification">1</span>
+        </div>
+        <div class="aria-chat-box" id="aria-chat-box">
+            <div class="chat-header">
+                <h3>Aria's Chat <i class="fas fa-robot"></i></h3>
+                <span class="close-chat-btn" id="close-chat-btn">&times;</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Ketik pesan Anda...">
+                <button id="send-chat-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/aria_chat_ai.js"></script>
+</body>
+</html>

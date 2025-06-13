@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajukan Proyek / Ide - AquaNime</title>
+    <link rel="stylesheet" href="../css/style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<script>
+  // Prevent white blink on reload if dark mode is enabled
+  (function() {
+    try {
+      if (localStorage.getItem('aquanimeDarkMode') === 'true') {
+        document.documentElement.classList.add('dark-mode-preload');
+        document.body.classList.add('dark-mode');
+      }
+    } catch(e){}
+  })();
+</script>
+<body> <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="AquaNime Logo" loading="lazy">
+                <span>AquaNime</span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="../index.html" data-lang-key="beranda">BERANDA</a></li> <li><a href="../pages/tentang.html" data-lang-key="tentang">TENTANG</a></li> <li><a href="../pages/proyek.html" data-lang-key="proyek">PROYEK</a></li> <li><a href="../pages/portal.html" data-lang-key="portal">PORTAL</a></li> <li><a href="../pages/kontak.html" data-lang-key="kontak">KONTAK</a></li> </ul>
+            <div class="lang-mode-toggles">
+                <div class="dark-mode-toggle" id="dark-mode-toggle">
+                    <i class="fas fa-moon"></i> <span data-lang-key="dark_mode">Dark Mode</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="content-section animate-target">
+            <h2 data-lang-key="propose_project_h2">Ajukan Proyek / Ide Baru</h2>
+            <p data-lang-key="propose_project_p">Punya ide brilian untuk proyek komunitas selanjutnya? Atau ingin memulai inisiatif baru? Bagikan pemikiran Anda di sini!</p>
+
+            <form id="ideaSubmissionForm" action="#" method="POST" class="contact-form">
+                <label for="idea-name" data-lang-key="your_name_label">Nama Anda:</label>
+                <input type="text" id="idea-name" name="name" required>
+
+                <label for="idea-email" data-lang-key="your_email_label">Email Anda:</label>
+                <input type="email" id="idea-email" name="email" required>
+
+                <label for="idea-category" data-lang-key="idea_category_label">Kategori Ide:</label>
+                <select id="idea-category" name="category" required>
+                    <option value="" data-lang-key="select_category_option">-- Pilih Kategori --</option>
+                    <option value="proyek_kreatif" data-lang-key="creative_project_option">Proyek Kreatif (Visual/Musik/Tulisan)</option>
+                    <option value="event" data-lang-key="event_option">Event / Gathering</option>
+                    <option value="konten" data-lang-key="content_option">Konten Website / Artikel</option>
+                    <option value="lainnya" data-lang-key="other_option">Lainnya</option>
+                </select>
+
+                <label for="idea-title" data-lang-key="idea_title_label">Judul Ide / Proyek:</label>
+                <input type="text" id="idea-title" name="title" required>
+
+                <label for="idea-description" data-lang-key="idea_description_label">Deskripsi Lengkap Ide Anda:</label>
+                <textarea id="idea-description" name="description" rows="8" placeholder="Jelaskan ide Anda secara detail, tujuan, dan bagaimana Anda membayangkan implementasinya." data-lang-key="idea_description_placeholder"></textarea>
+
+                <button type="submit" class="btn-primary" data-lang-key="send_idea_btn">Kirim Ide</button>
+            </form>
+            <p style="text-align: center; margin-top: 30px;" data-lang-key="idea_review_info">
+                Tim kami akan meninjau ide Anda dan menghubungi Anda jika diperlukan untuk diskusi lebih lanjut!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 data-lang-key="explore_footer">EKSPLORASI</h4>
+                <ul>
+                    <li><a href="../index.html" data-lang-key="home_footer">Beranda</a></li> <li><a href="../pages/tentang.html" data-lang-key="about_us_footer">Tentang kami</a></li> <li><a href="../pages/tentang.html#visi-misi" data-lang-key="vision_mission_footer">Visi & Misi</a></li> <li><a href="../pages/tentang.html#maskot" data-lang-key="about_mascot_footer">Tentang Maskot</a></li> <li><a href="../pages/portal.html" data-lang-key="info_portal_footer">Portal Informasi</a></li> <li><a href="../pages/proyek.html" data-lang-key="community_projects_footer">Proyek Komunitas</a></li> <li><a href="#" data-lang-key="events_gathering_footer">Event dan Gathering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="community_footer">KOMUNITAS</h4>
+                <ul>
+                    <li><a href="../community/komunitas_join.html" data-lang-key="join_community_footer">Join Komunitas</a></li> <li><a href="../community/komunitas_divisi_regional.html" data-lang-key="divisions_regions_footer">Divisi & Regional</a></li> <li><a href="../community/komunitas_karya_member.html" data-lang-key="member_works_footer">Karya Member</a></li> <li><a href="../community/komunitas_forum_diskusi.html" data-lang-key="discussion_forum_footer">Forum Diskusi</a></li> <li><a href="../community/komunitas_light_novel_aria.html" data-lang-key="read_aria_novel_footer">Baca Light Novel Aria</a></li> <li><a href="../community/komunitas_fanmade.html" data-lang-key="fanmade_footer">Fanmade</a></li> </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="help_relations_footer">BANTUAN DAN RELASI</h4>
+                <ul>
+                    <li><a href="../pages/kontak.html" data-lang-key="contact_us_footer">Kontak Kami</a></li> <li><a href="../pages/kontak.html#hubungi-founder" data-lang-key="contact_founder_footer">Hubungi Founder</a></li> <li><a href="../pages/kontak.html#partnership-kolaborasi" data-lang-key="partnership_collaboration_footer">Partnership / Kolaborasi</a></li> <li><a href="#" data-lang-key="media_pr_footer">Media & Public Relation</a></li> <li><a href="#" data-lang-key="donation_footer">Donasi</a></li>
+                    <li><a href="../pages/kontak.html#faq" data-lang-key="faq_footer">FAQ / Pertanyaan Umum</a></li> </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="legal_tech_info_footer">LEGAL & INFO TEKNIS</h4>
+                <ul>
+                    <li><a href="../legal/kebijakan_privasi.html" data-lang-key="privacy_policy_footer">Kebijakan Privasi</a></li> <li><a href="../legal/syarat_ketentuan.html" data-lang-key="terms_conditions_footer">Syarat & Ketentuan</a></li> <li><a href="../legal/kode_etik_komunitas.html" data-lang-key="community_code_of_conduct_footer">Kode Etik Komunitas</a></li> <li><a href="../legal/versi_website_log.html" data-lang-key="website_version_log_footer">Versi Website / Update Log</a></li> <li><a href="../legal/laporan_bug_masukan.html" data-lang-key="bug_report_feedback_footer">Laporan Bug / Masukan</a></li> </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-lang-key="arias_corner_footer">ARIA'S CORNER</h4>
+                <ul>
+                    <li><a href="../aria_corner/aria_quote_of_the_day.html" data-lang-key="quote_of_day_footer">Quote of the Day by Aria</a></li> <li><a href="../aria_corner/aria_mini_diary.html" data-lang-key="aria_mini_diary_footer">Aria's Mini Diary</a></li> <li><a href="../aria_corner/aria_photocard_collection.html" data-lang-key="aria_photocard_collection_footer">Aria Photocard Collection</a></li> <li><a href="../aria_corner/aria_cosplayer_tribute.html" data-lang-key="aria_cosplayer_tribute_footer">Aria Cosplayer's</a></li> </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-lang-key="aquanime_community_text">Komunitas AquaNime</p>
+            <p data-lang-key="region_text">Wilayah: Jabodetabek, Jawa Barat</p>
+            <p data-lang-key="email_text">Email: aquanime.ow@gmail.com</p>
+            <p data-lang-key="copyright_text">©2017-2025 AquaNime. All rights reserved. Didukung oleh komunitas untuk komunitas.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script> <script src="../js/aria_chat_ai.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ideaSubmissionForm = document.getElementById('ideaSubmissionForm');
+            const API_IDEAS_URL = 'http://localhost:5000/api/ideas'; // Endpoint API untuk ide
+
+            if (ideaSubmissionForm) {
+                ideaSubmissionForm.addEventListener('submit', async (event) => {
+                    event.preventDefault();
+
+                    const formData = new FormData(ideaSubmissionForm);
+                    const data = Object.fromEntries(formData.entries());
+
+                    try {
+                        const response = await fetch(API_IDEAS_URL, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data),
+                        });
+
+                        const result = await response.json();
+
+                        if (response.ok) {
+                            alert('Ide proyek Anda berhasil dikirim! Tim kami akan meninjau dan menghubungi Anda.');
+                            ideaSubmissionForm.reset();
+                        } else {
+                            alert(`Gagal mengirim ide: ${result.error || response.statusText}`);
+                            console.error('Error response:', result);
+                        }
+                    } catch (error) {
+                        alert('Terjadi kesalahan jaringan atau server. Coba lagi nanti.');
+                        console.error('Network or server error:', error);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
